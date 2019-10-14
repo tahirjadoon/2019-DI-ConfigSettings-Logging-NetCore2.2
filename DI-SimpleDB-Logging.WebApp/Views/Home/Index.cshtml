@@ -1,0 +1,16 @@
+﻿@model List<DI_SimpleDB_Logging.WebApp.Models.CustomerViewModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>Customers</h2>
+
+@foreach(var customer in Model)
+{
+<div class="row">
+    <div class="col-md-1">@customer.Id</div>
+    <div class="col-md-2">@customer.Name</div>
+    <div class="col-md-3">@customer.Address</div>
+</div>
+}
+
